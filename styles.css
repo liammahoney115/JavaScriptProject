@@ -1,3 +1,4 @@
+ /*setting backgournd color, font family and setting up for hole page */ 
 * {
     background-color: darkcyan;
     color:white;
@@ -7,6 +8,7 @@
     box-sizing: border-box;
 }
 
+ /*centering text, chaning to white with green background, setting size etc of heading */ 
 header>h1 {
     text-align: center;
     background-color: white;
@@ -15,6 +17,7 @@ header>h1 {
     font-size:50px;
 }
 
+ /* setting border wize margin color and fotn family for scoreboard*/ 
 .scoreboard {
   border:3px solid white;
   width:200px;
@@ -28,6 +31,7 @@ header>h1 {
   position: relative;
 }
 
+ /* setting border size and font size of question box*/ 
 .question-box{
     border: 3px solid white;
     width:80%;
@@ -39,13 +43,17 @@ header>h1 {
     position:relative;
 }
 
+ /*setting margin */ 
 #question{
     margin:10px 10px;
 }
 
+ /* setting size for image question*/ 
 img{
     max-width:80px;
 }
+
+ /*putting border around each answer and setting size */ 
 .answer {
     border:3px solid black;
     border-radius:8px;
@@ -54,36 +62,52 @@ img{
     display:inline-block;
 }
 
+ /* position for answer a*/ 
 #answer-a{
-
     position:absolute;
     top:110px;
     left:25px;
 }
 
+ /*position for answer b */ 
 #answer-b{
     position:absolute;
     top: 110px;
     right:25px;
 }
 
+ /* position for answer c*/ 
 #answer-c{
     position: absolute;
-    bottom:30px;
-    right:25px;
-}
-
-#wellDone {
-    width:100vw;
-}
-
-#answer-d {
-    position:absolute;
     bottom:30px;
     left:25px;
 }
 
+ /* position for answer d */ 
+#answer-d {
+    position:absolute;
+    bottom:30px;
+    right:25px;
+}
+ /* changes answer background color for effect*/ 
 .answer:hover {
     cursor:pointer;
     background: red;
+  }
+
+   /* reduces font size for responsive design*/ 
+  @media(max-width: 600px){
+    *{
+        text-align: center;
+        font-size:20px;
+    }
+    header>h1{
+        font-size: 30px;
+    }
+  }
+
+  @media(max-width:400px){
+    .answer{
+        font-size: 10px;
+    }
   }
