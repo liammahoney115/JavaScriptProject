@@ -6,24 +6,30 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
+    <!-- A Header that will contain the title of the website. -->
+    <header> 
       <h1>Geography Quiz</h1>  
     </header>
+    <!-- creating a div for a scoreboard to keep score onthe amount of correct answers. -->
     <div class ="scoreboard">
       <div id ="badge">Your Score:</div>
       <div id="score">0</div>
     </div>
+    <!-- a div for the whole section that contains the question and 4 answers -->
     <div class="question-box">
       <div id="question">
+        <!-- The first question is written here, i will change the elements content with the JavaScipt-->
         <p>What country's flag is this?</p>
       </div>
+      <!-- Seperate div containing all the answer options-->
       <div class="answers">
-        <span class="answer" id="answer-a" >A: England</span>
-        <span class="answer" id="answer-b" ">B: U.S.A</span>
-        <span class="answer" id="answer-c" >C: France</span>
-        <span class="answer" id="answer-d" >D: Japan</span>
+        <span class="answer" id="answer-a" >England</span>
+        <span class="answer" id="answer-b" ">U.S.A</span>
+        <span class="answer" id="answer-c" >France</span>
+        <span class="answer" id="answer-d" >Japan</span>
       </div>
     </div>
+  <!-- Link to the script-->
 	<script src="script.js"></script>
   </body>
 </html>
