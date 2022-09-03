@@ -142,3 +142,41 @@ function question2(ans){
         question3html();
     }
 }
+
+function question3(ans){
+    if (ans== answerB){
+        myScore++;
+        question++;
+        score_element.innerHTML=myScore;
+        question4html();
+    }
+    else {
+        question++;
+        question4html();
+    }
+}
+function question4(ans){
+    if (ans== answerC){
+        myScore++;
+        question++;
+        score_element.innerHTML=myScore;
+        question5html();
+    }
+    else {
+        question++;
+        question5html();
+    }
+}
+
+function question5(ans){
+    if (ans== answerB){
+        myScore++;
+        question++
+        score_element.innerHTML=myScore;
+        end();
+    }
+    else {
+        question++
+        end();
+    }
+}
