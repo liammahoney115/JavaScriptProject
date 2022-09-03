@@ -115,3 +115,17 @@ function question5html() {
     answerC.innerHTML = "Ohio";
     answerD.innerHTML = "Texas";
 }
+
+function question1(ans){
+    if (ans == answerC){
+        myScore++;
+        question ++;
+        console.log(myScore);
+        score_element.innerHTML = myScore;
+        question2html();
+    }
+    else{
+        question++
+        question2html();
+    }
+}
