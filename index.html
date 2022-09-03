@@ -2,12 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Geography Quiz</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Welcome to My Website</h1>  
-	<script src="index.js"></script>
+    <header>
+      <h1>Geography Quiz</h1>  
+    </header>
+    <div class ="scoreboard">
+      <div id ="badge">Your Score:</div>
+      <div id="score">0</div>
+    </div>
+    <div class="question-box">
+      <div id="question">
+        <p>What country's flag is this?</p>
+      </div>
+      <div class="answers">
+        <span class="answer" id="answer-a" >A: England</span>
+        <span class="answer" id="answer-b" ">B: U.S.A</span>
+        <span class="answer" id="answer-c" >C: France</span>
+        <span class="answer" id="answer-d" >D: Japan</span>
+      </div>
+    </div>
+	<script src="script.js"></script>
   </body>
 </html>
