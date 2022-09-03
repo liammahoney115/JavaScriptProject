@@ -1,3 +1,4 @@
+/* naming variables and caching the DOM */
 let myScore = 0;
 let score_element = document.getElementById("score")
 let question_element= document.getElementById("question")
@@ -5,13 +6,17 @@ let answerA =document.getElementById("answer-a");
 let answerB =document.getElementById("answer-b");
 let answerC =document.getElementById("answer-c");
 let answerD =document.getElementById("answer-d");
-let question = 1;
+let question = 1; /* this var keeps count of the question so the main 
+function below can act accordingly*/
 
-main ();
+main (); /* calling the main written below*/
 
+/* this function 'listen' for the user to pick one of the answers. an if 
+statement is ran to check which question it is on, so it sends the appropriate
+answer to the right question. By default question is 1 but is increased after 
+every question*/
 function main(){
     answerA.addEventListener('click', function(){
-        console.log("A");
         if (question == 1){
             question1(answerA);}
         else if (question ==2){
@@ -30,7 +35,6 @@ function main(){
     })
 
     answerB.addEventListener('click', function(){
-        console.log("B")
         if (question == 1){
             question1(answerB)}
         else if (question ==2){
@@ -66,7 +70,6 @@ function main(){
     })
 
     answerD.addEventListener('click', function(){
-        console.log("D")
         if (question == 1){
             question1(answerD)}
         else if (question ==2){
@@ -84,6 +87,8 @@ function main(){
     })
 }
 
+/* These functions rewrites the html displayed on the screen,
+ so that a new qquestion can be asked*/
 function question2html() {
     question_element.innerHTML=" What is the capital of Peru?";
     answerA.innerHTML = "Bangkok";
@@ -116,20 +121,22 @@ function question5html() {
     answerD.innerHTML = "Texas";
 }
 
+/* function designed to intake an option of AnswerA- Answr D,
+checks with an if statement if it matches the correct answer. */
 function question1(ans){
     if (ans == answerC){
-        myScore++;
-        question ++;
-        console.log(myScore);
-        score_element.innerHTML = myScore;
-        question2html();
+        myScore++; /* score is incremented if right */
+        question ++; /* question counter incremented*/
+        score_element.innerHTML = myScore; /* changes html on screen to show score*/
+        question2html(); /* calls function that reqrites question*/
     }
-    else{
-        question++
-        question2html();
+    else{ /* if wrong */
+        question++; /* question is still incremented even if wrong*/
+        question2html(); /* rewrites question*/
     }
 }
 
+/* same as above */
 function question2(ans){
     if (ans== answerD){
         myScore++;
@@ -177,12 +184,14 @@ function question5(ans){
     }
     else {
         question++
-        end();
+        end(); /* calls end function written below*/
     }
 }
+
+/* this function shows finals score and removes html elements*/
 function end(){
     question_element.innerHTML="Final score: " + myScore + ".    Reload the page to try again!";
-    answerA.remove();
+    answerA.remove(); /* these remvoes the answer elements so the page looks nicer */
     answerB.remove();
     answerC.remove();
     answerD.remove();
