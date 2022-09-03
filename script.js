@@ -90,5 +90,12 @@ function question2html() {
     answerB.innerHTML = "Dublin";
     answerC.innerHTML = "Tokyo";
     answerD.innerHTML = "Lima";
+}
 
+function question3html() {
+    question_element.innerHTML="What is the currency of Japan";
+    answerA.innerHTML = "Dollar";
+    answerB.innerHTML = "Yen";
+    answerC.innerHTML = "Pound";
+    answerD.innerHTML = "Rupee";
 }
