@@ -20,69 +20,72 @@ function main(){
         if (question == 1){
             question1(answerA);}
         else if (question ==2){
-            question2(answerA)
+            question2(answerA);
         }
         else if (question ==3){
-            question3(answerA)
+            question3(answerA);
         }
         else if (question ==4){
-            question4(answerA)
+            question4(answerA);
         }
         else if (question ==5){
-            question5(answerA)
+            question5(answerA);
         }
         
     })
 
     answerB.addEventListener('click', function(){
         if (question == 1){
-            question1(answerB)}
+            question1(answerB);
+        }
         else if (question ==2){
-            question2(answerB)
+            question2(answerB);
         }
         else if (question ==3){
-            question3(answerB)
+            question3(answerB);
         }
         else if (question ==4){
-            question4(answerB)
+            question4(answerB);
         }
         else if (question ==5){
-            question5(answerB)
+            question5(answerB);
         }
     })
 
     answerC.addEventListener('click', function(){
         console.log("C");
         if (question == 1){
-            question1(answerC)}
+            question1(answerC);
+        }
         else if (question ==2){
-            question2(answerC)
+            question2(answerC);
         }
         else if (question ==3){
-            question3(answerC)
+            question3(answerC);
         }
         else if (question ==4){
-            question4(answerC)
+            question4(answerC);
         }
         else if (question ==5){
-            question5(answerC)
+            question5(answerC);
         }
     })
 
     answerD.addEventListener('click', function(){
         if (question == 1){
-            question1(answerD)}
+            question1(answerD);
+        }
         else if (question ==2){
-            question2(answerD)
+            question2(answerD);
         }
         else if (question ==3){
-            question3(answerD)
+            question3(answerD);
         }
         else if (question ==4){
-            question4(answerD)
+            question4(answerD);
         }
         else if (question ==5){
-            question5(answerD)
+            question5(answerD);
         }
     })
 }
