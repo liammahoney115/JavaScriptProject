@@ -181,12 +181,12 @@ function question4(ans){
 function question5(ans){
     if (ans== answerB){
         myScore++;
-        question++
+        question++;
         score_element.innerHTML=myScore;
         end();
     }
     else {
-        question++
+        question++;
         end(); /* calls end function written below*/
     }
 }
