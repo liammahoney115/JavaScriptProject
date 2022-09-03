@@ -129,3 +129,16 @@ function question1(ans){
         question2html();
     }
 }
+
+function question2(ans){
+    if (ans== answerD){
+        myScore++;
+        question++;
+        score_element.innerHTML=myScore;
+        question3html();
+    }
+    else {
+        question++;
+        question3html();
+    }
+}
