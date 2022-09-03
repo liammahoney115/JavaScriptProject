@@ -83,3 +83,12 @@ function main(){
         }
     })
 }
+
+function question2html() {
+    question_element.innerHTML=" What is the capital of Peru?";
+    answerA.innerHTML = "Bangkok";
+    answerB.innerHTML = "Dublin";
+    answerC.innerHTML = "Tokyo";
+    answerD.innerHTML = "Lima";
+
+}
