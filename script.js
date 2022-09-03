@@ -99,3 +99,19 @@ function question3html() {
     answerC.innerHTML = "Pound";
     answerD.innerHTML = "Rupee";
 }
+
+function question4html() {
+    question_element.innerHTML="What country has the highest population?";
+    answerA.innerHTML = "U.S.A.";
+    answerB.innerHTML = "Russia";
+    answerC.innerHTML = "China";
+    answerD.innerHTML = "India";
+}
+
+function question5html() {
+    question_element.innerHTML="In which US state would you find Fort Knox?";
+    answerA.innerHTML = "New York";
+    answerB.innerHTML = "Kentucky";
+    answerC.innerHTML = "Ohio";
+    answerD.innerHTML = "Texas";
+}
