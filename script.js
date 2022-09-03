@@ -180,3 +180,11 @@ function question5(ans){
         end();
     }
 }
+function end(){
+    question_element.innerHTML="Final score: " + myScore + ".    Reload the page to try again!";
+    answerA.remove();
+    answerB.remove();
+    answerC.remove();
+    answerD.remove();
+
+}
