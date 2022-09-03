@@ -26,7 +26,7 @@ A project made propting the user to complete a simple geography quiz. The user i
   - The scoreboard is where the user will be able to see their score as they are playing the game
   - It updates with every question the user completes.
 
-![score](media/love_maths_question.png)
+![score](images/scoreboard.png)
 
 
 
